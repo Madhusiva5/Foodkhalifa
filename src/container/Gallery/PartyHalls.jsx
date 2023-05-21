@@ -3,6 +3,7 @@ import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Gallery.css';
+import { useNavigate ,NavLink} from 'react-router-dom';
 
 const PartyHalls = () => {
   const scrollRef = React.useRef(null);
