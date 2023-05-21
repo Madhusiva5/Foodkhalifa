@@ -24,7 +24,7 @@ const PartyHalls = () => {
         <SubHeading title="Photo Gallery" />
         <h1 className="headtext__cormorant">Party Halls</h1>
         <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>We are also providing Party Halls for enough 100 seats at lower cost and with unique and best planning</p>
-        <button type="button" className="custom__button">Contact Us</button>
+       <button type="button" className="custom__button" ><NavLink to="/dec">View More</NavLink></button>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
