@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
 import './App.css';
+import { Navbar } from './components';
+import Menu from './components/Menu/Menu';
+import Homepage from './components/Homepage';
+import Menus from './components/Menu/Menu';
+import Routing from './components/Routing';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Routing/>
+  </div>
+);
 
 export default App;
