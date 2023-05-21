@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
-
+import { useNavigate ,NavLink} from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -17,9 +17,9 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="/">Home</a></li>
-        <li className="p__opensans"><a href="/menu">Menu</a></li>
+        <li className="p__opensans"><a href="/menu"><NavLink to="/menu">Menu</NavLink></a></li>
         <li className="p__opensans"><a href="#about">About</a></li>
-        <li className="p__opensans"><a href="/dec">Function Decors</a></li>
+        <li className="p__opensans"><a href="/dec"><NavLink to="/dec">Function Decors</NavLink></a></li>
         <li className="p__opensans"><a href="#ph">Party Halls</a></li>
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
