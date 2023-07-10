@@ -12,9 +12,10 @@ const Newsletter = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_jurc9h7', 'template_h7ozq8r', form.current, '5lvREnTMnINeA5_q2')
+   emailjs.sendForm('service_oebmmfl', 'template_qjkhcwd', form.current, 'RdQ-kvP1XlabcIbc9')
       .then((result) => {
-          console.log(result.text);
+        alert("Feedback sent!");
+        console.log(result.text);
       }, (error) => {
           console.log(error.text);
       }); 
